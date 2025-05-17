@@ -30526,7 +30526,7 @@ function MenuCard({ menuitem, foodselect }) {
         __self: this
     }, // if isveg is 1 then veg is there else non veg filter logic
     menuitem?.itemCards?.filter((food)=>"isVeg" in food?.card?.info).map((items)=>/*#__PURE__*/ (0, _reactDefault.default).createElement((0, _restinfoDefault.default), {
-            key: items.card.info.id,
+            key: items?.card?.info?.id,
             restData: items?.card?.info,
             __source: {
                 fileName: "src/component/MenuCard.jsx",
@@ -30644,7 +30644,7 @@ function MenuCard({ menuitem, foodselect }) {
         __self: this
     }, // if isveg is 1 then veg is there else non veg filter logic
     menuitem?.itemCards?.map((items)=>/*#__PURE__*/ (0, _reactDefault.default).createElement((0, _restinfoDefault.default), {
-            key: items.card.info.id,
+            key: items?.card?.info?.id,
             restData: items?.card?.info,
             foodselect: foodselect,
             __source: {

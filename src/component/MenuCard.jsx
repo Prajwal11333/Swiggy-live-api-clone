@@ -47,7 +47,7 @@ export default function MenuCard({menuitem,foodselect}){
                 <div>
             {
                 // if isveg is 1 then veg is there else non veg filter logic
-                menuitem?.itemCards?.filter((food)=>"isVeg" in food?.card?.info).map((items)=><Restinfo key={items.card.info.id}  restData={items?.card?.info}></Restinfo>)
+                menuitem?.itemCards?.filter((food)=>"isVeg" in food?.card?.info).map((items)=><Restinfo key={items?.card?.info?.id}  restData={items?.card?.info}></Restinfo>)
             }
                 </div>
                 <div className="h-5 bg-gray-200 mt-4 pt-4"></div>
@@ -85,7 +85,7 @@ export default function MenuCard({menuitem,foodselect}){
         <div>
     {
         // if isveg is 1 then veg is there else non veg filter logic
-        menuitem?.itemCards?.map((items)=><Restinfo key={items.card.info.id}  restData={items?.card?.info} foodselect={foodselect}></Restinfo>)
+        menuitem?.itemCards?.map((items)=><Restinfo key={items?.card?.info?.id}  restData={items?.card?.info} foodselect={foodselect}></Restinfo>)
     }
         </div>
         <div className="h-5 bg-gray-200 mt-4 pt-4"></div>
